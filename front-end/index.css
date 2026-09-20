@@ -1,0 +1,145 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0f0a1b;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 650px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+
+button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+#welcome {
+  height: 300px;
+  border: 1px solid #e4e6eb;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#welcome p.yourMsg {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end; 
+}
+
+
+#welcome p.otherMsg {
+  background-color: #205752;
+  color: #fff;
+  align-self: flex-start;
+}
+
+
+#welcome p.systemMsg {
+  background-color: transparent;
+  color: #fc0c0c;
+  align-self: center;
+  font-style: italic;
+}
+
+
+
+#welcome p {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: 85%;
+  width: fit-content;
+  background-color: #e4e6eb;
+  align-self: flex-start; 
+  word-break: break-word;
+}
+
+
+#welcome p.yourMsg {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+
+input:disabled, 
+button:disabled,
+.disable {
+  background-color: #e4e6eb !important;
+  color: #8e9297 !important;
+  border-color: #d1d3d8 !important;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+#pp {
+  display: none;
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+
+#pp.activep {
+  display: block;
+}

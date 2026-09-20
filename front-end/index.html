@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="chat-container">
+    
+  <form onsubmit="handlesubmit(event)">
+    <input type="text" id="name" placeholder="Digite seu nome...">
+    <button type="submit" id="btn-send">Entrar</button>
+  </form>
+  <p id="pp">Por favor, digite um nome válido.</p>
+
+  <div id="welcome"></div>
+
+  <form onsubmit="handleSendMessage(event)">
+    <input type="text" id="message" placeholder="Digite uma mensagem...">
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./index.js"></script>
+
+</html>
