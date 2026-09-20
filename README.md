@@ -4,7 +4,7 @@ Um sistema de chat desenvolvido para debates em tempo real, utilizando **Node.js
 
 ## 🚀 Teste Agora Mesmo
 O projeto está hospedado e pronto para uso na nuvem:
-👉 [Acesse o CineDebate ao Vivo aqui](https://onrender.com)
+👉 [Acesse o CineDebate ao Vivo aqui](https://cinedebate-chat.onrender.com/)
 
 ## 🛠️ Tecnologias Utilizadas
 - **Node.js** (v24 com `--experimental-strip-types`)
