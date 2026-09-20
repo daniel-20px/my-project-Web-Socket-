@@ -5,12 +5,9 @@
   "description": "Servidor do chat de debates de filmes",
   "main": "server.ts",
   "scripts": {
- "scripts": {
-  "dev": "nodemon --exec \"node --experimental-strip-types\" server.ts"
-}
-
-}
-,
+    "dev": "nodemon --exec \"node --experimental-strip-types\" server.ts",
+    "start": "node --experimental-strip-types server.ts"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
